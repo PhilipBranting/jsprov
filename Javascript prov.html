@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <p id="demo">tjenare kompis</p>
+    <img id="random.jpg" src="random.jpg">
+    <script>
+        function summa(tal1, tal2){
+
+            let summa = tal1 + tal2;
+
+            return summa;
+        }
+
+        console.log(summa(2,5))
+    </script>
+
+
+    <script>
+        document.getElementById('demo').innerHTML = 'Hej';
+
+    </script>
+    <script>
+        document.getElementById('random.jpg').src = 'bild.jpg'
+
+    </script>
+
+    <script>
+        let talarray = [1,2,3,4,5,6,7,8,9,10]
+        array = []
+
+        function minusett(){
+        for(i = 0; i < talarray.length; i++){
+            let x = talarray[i] - 1
+            array.push = x
+          
+        }
+        console.log(array)
+        }
+        minusett()
+    </script>
+    <label for="namn"> namn:</label>
+    <input type="text" name="namn" id="namn">
+    <input type="Button" value="submit" onclick="alertname()">
+
+
+    <script>
+        function alertname(){
+            var name = document.getElementById('namn').value;
+            alert(name)
+        }
+        
+
+        
+    </script>
+
+</body>
+</html>
